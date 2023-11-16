@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zodiac Characteristics</title>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+    <!--contain-->
+    <div class="container">
+        <h1 class="text-center">Zodiac Characteristics</h1>
+        <div class="row">
+            {{#each zodiacs}}
+                <div class="col-md-3">
+                    <a href="task4.htm/{{name}}">
+                        <img src="images{{imagePath}}" alt="{{name}}" class="img-circle img-thumbnail">
+                        <h2 class="text-center">{{name}}<br />
+                            <small>{{dates}}</small>
+                            </br />
+                        </h2>
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+    <!--/contain-->
+</body>
+
+</html>
